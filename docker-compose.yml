@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  rstudio:
+    image: nlpsandbox/notebooks:${IMAGE_VERSION}
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      # Prevents the local $USER value to be picked up. Instead use the user
+      # value defined in .env
+      - USER=${USERNAME}
+    container_name: nlpsandbox-notebooks
+    command: ${IDE}
+    volumes:
+      - .:/home/${USERNAME}/nlpsandbox:rw
+    networks:
+     # - data-node
+      - nlpsandbox
+    ports:
+      - "${HOST_RSTUDIO_PORT}:8787"
+      - "${HOST_JUPYTER_PORT}:8888"
+
+networks:
+ # data-node:
+    #external: true
+    #name: data-node_default
+  nlpsandbox:
+    name: nlpsandbox
