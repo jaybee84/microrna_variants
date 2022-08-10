@@ -1,6 +1,6 @@
-[![nlpsandbox.io](https://nlpsandbox.github.io/nlpsandbox-themes/banner/Banner@3x.png)](https://nlpsandbox.io)
+[![MicroRNAs](https://upload.wikimedia.org/wikipedia/commons/6/69/Examples_of_microRNA_stem-loops.jpg)](https://www.synapse.org/#!Synapse:syn27114640/wiki/)
 
-# NLP Sandbox Notebooks
+# Notebooks
 
 [![GitHub Release](https://img.shields.io/github/release/nlpsandbox/notebooks.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/nlpsandbox/notebooks/releases)
 [![GitHub CI](https://img.shields.io/github/workflow/status/nlpsandbox/notebooks/CI.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/nlpsandbox/notebooks)
@@ -11,11 +11,11 @@
 ## Introduction
 
 This repository provides a portable development environment that includes
-RStudio and Jupyter. This environment aims to support NLP Sandbox users who
-develop or apply tools that intereact with the NLP Sandbox ecosystem.
+RStudio and Jupyter. This environment aims to support analytical users who
+develop or apply tools that interact with the microRNA project at Sage Bionetworks.
 
 For example, try the example notebooks included with this repository to perform
-analysis using data stored in a local or remote instance of the NLP Sandbox Data
+analysis using data stored in a local or remote instance of the MicroRNA Data
 Node. See the Section [Notebooks](#Notebooks) for the list of example notebooks
 included with this repository.
 
@@ -30,7 +30,6 @@ the image [sagebionetworks/rstudio].
 ## Specification
 
 - Notebooks version: 0.2.0
-- NLP Sandbox schemas version: 1.2.0
 - RStudio version: 4.1.0
 - JupyterLab version: 3.2.1
 
